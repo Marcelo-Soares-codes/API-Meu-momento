@@ -26,7 +26,7 @@ export const sendConfirmationEmail = async (
         <h1 style="color: #040F0F;">Confirmação de E-mail</h1>
         <p style="color: #2BA84A;">Por favor, clique no link abaixo para confirmar seu e-mail:</p>
         <p style="color: #2BA84A;">Token: ${confirmationToken}</p>
-        <a href="${process.env.URL_FRONTEND}/user/confirm" style="margin: auto; background-color: #248232; color: #FCFFFC; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block;" Authorization: "Bearer ${confirmationToken}">Confirmar E-mail</a>
+        <a href="${process.env.URL_FRONTEND}/confirm-create/${confirmationToken}" style="margin: auto; background-color: #248232; color: #FCFFFC; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block;">Confirmar E-mail</a>
       </div>
     `;
 
